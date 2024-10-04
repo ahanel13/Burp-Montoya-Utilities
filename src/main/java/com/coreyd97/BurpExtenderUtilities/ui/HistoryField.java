@@ -1,5 +1,6 @@
-package com.coreyd97.BurpExtenderUtilities;
+package com.coreyd97.BurpExtenderUtilities.ui;
 
+import com.coreyd97.BurpExtenderUtilities.Preferences;
 import com.google.gson.reflect.TypeToken;
 
 import javax.swing.*;
@@ -13,7 +14,6 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Stack;
 
 /**
  * Created by corey on 05/09/17.
@@ -21,9 +21,9 @@ import java.util.Stack;
 public class HistoryField extends JComboBox {
 
     private static Type HISTORY_TYPE_TOKEN = new TypeToken<List<String>>(){}.getType();
-    private final int maxHistory;
+    private final int         maxHistory;
     private final Preferences preferences;
-    private final String preferencesKey;
+    private final String      preferencesKey;
     private LinkedList<String> history;
 
     public HistoryField(final int maxHistory){

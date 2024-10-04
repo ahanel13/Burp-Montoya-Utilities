@@ -1,14 +1,12 @@
-package com.coreyd97.BurpExtenderUtilities;
+package com.coreyd97.BurpExtenderUtilities.ui;
+
+import com.coreyd97.BurpExtenderUtilities.Preferences;
 
 import javax.swing.*;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.FocusAdapter;
-import java.awt.event.FocusEvent;
 import java.util.HashMap;
 
 public class PanelBuilder {
@@ -20,9 +18,9 @@ public class PanelBuilder {
     int[][] gridWeightsX;
     int[][] gridWeightsY;
     HashMap<Component, Double> weightsX = new HashMap<>();
-    HashMap<Component, Double> weightsY = new HashMap<>();
-    Alignment alignment = Alignment.CENTER;
-    double scaleX = 1, scaleY = 1;
+    HashMap<Component, Double> weightsY  = new HashMap<>();
+    Alignment                  alignment = Alignment.CENTER;
+    double                     scaleX    = 1, scaleY = 1;
     int insetsX = 0, insetsY = 0;
 
     public Component[][] getComponentGrid() {

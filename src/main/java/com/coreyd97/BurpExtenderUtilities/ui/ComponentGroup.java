@@ -1,9 +1,9 @@
-package com.coreyd97.BurpExtenderUtilities;
+package com.coreyd97.BurpExtenderUtilities.ui;
+
+import com.coreyd97.BurpExtenderUtilities.Preferences;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 public class ComponentGroup extends JPanel {
 

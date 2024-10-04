@@ -1,4 +1,4 @@
-package com.coreyd97.BurpExtenderUtilities;
+package com.coreyd97.BurpExtenderUtilities.ui;
 
 import burp.api.montoya.MontoyaApi;
 

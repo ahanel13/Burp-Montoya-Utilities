@@ -1,4 +1,6 @@
-package com.coreyd97.BurpExtenderUtilities;
+package com.coreyd97.BurpExtenderUtilities.ui;
+
+import com.coreyd97.BurpExtenderUtilities.Preferences;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,9 +13,9 @@ public class VariableViewPanel extends JPanel {
     private final Component a;
     private final String aTitle;
     private final Component b;
-    private final String bTitle;
-    private Preferences preferences;
-    private String preferenceKey;
+    private final String      bTitle;
+    private       Preferences preferences;
+    private       String      preferenceKey;
     private Component wrapper;
     private View view;
 

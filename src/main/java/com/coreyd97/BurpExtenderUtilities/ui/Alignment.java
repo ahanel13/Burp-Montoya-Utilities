@@ -1,4 +1,4 @@
-package com.coreyd97.BurpExtenderUtilities;
+package com.coreyd97.BurpExtenderUtilities.ui;
 
 public enum Alignment {
     TOPLEFT, TOPMIDDLE, TOPRIGHT,

@@ -1,14 +1,13 @@
 import burp.api.montoya.BurpExtension;
 import burp.api.montoya.MontoyaApi;
 import com.coreyd97.BurpExtenderUtilities.*;
-import com.coreyd97.BurpExtenderUtilities.ComponentGroup.Orientation;
+import com.coreyd97.BurpExtenderUtilities.ui.*;
+import com.coreyd97.BurpExtenderUtilities.ui.ComponentGroup.Orientation;
 import com.google.gson.reflect.TypeToken;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -27,7 +26,7 @@ public class TestExtension implements BurpExtension, ILogProvider {
 
     //UX
     private PopOutPanel popOutPanel;
-    private JPanel extensionPanel;
+    private JPanel      extensionPanel;
     private JPanel extensionMainPanel;
     private JPanel extensionPreferencesPanel;
 

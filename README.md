@@ -410,7 +410,7 @@ A Component Group is simply a single panel containing one or more settings, and 
 <td>
 
 ```java
-import com.coreyd97.BurpExtenderUtilities.ComponentGroup.Orientation;
+import com.coreyd97.BurpExtenderUtilities.ui.ComponentGroup.Orientation;
 [...]
 ComponentGroup example = new ComponentGroup(Orientation.VERTICAL, "Example");
 example.addPreferenceComponent(preferences, "SomeString", "String Label");
