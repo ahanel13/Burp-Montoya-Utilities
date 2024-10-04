@@ -1,6 +1,10 @@
-package com.coreyd97.BurpExtenderUtilities;
+package com.coreyd97.BurpExtenderUtilities.persistence;
 
 import burp.api.montoya.MontoyaApi;
+import com.coreyd97.BurpExtenderUtilities.DefaultGsonProvider;
+import com.coreyd97.BurpExtenderUtilities.GsonUtilities;
+import com.coreyd97.BurpExtenderUtilities.IGsonProvider;
+import com.coreyd97.BurpExtenderUtilities.Preferences;
 
 import java.lang.reflect.Type;
 
@@ -37,7 +41,7 @@ extends PersistedContainer{
     Class<?> thisClazz = this.getClass();
     PersistedObject thisDefaultClone = GsonUtilities.clone(
       this, thisClazz, _prefs.getGsonProvider().getGson()
-    );
+                                                          );
 
     this.register(thisClazz, thisDefaultClone);
   }

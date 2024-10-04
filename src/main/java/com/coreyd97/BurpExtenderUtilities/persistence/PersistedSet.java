@@ -1,6 +1,8 @@
-package com.coreyd97.BurpExtenderUtilities;
+package com.coreyd97.BurpExtenderUtilities.persistence;
 
 import burp.api.montoya.MontoyaApi;
+import com.coreyd97.BurpExtenderUtilities.IGsonProvider;
+import com.coreyd97.BurpExtenderUtilities.Preferences;
 import com.google.gson.reflect.TypeToken;
 
 import java.util.Set;

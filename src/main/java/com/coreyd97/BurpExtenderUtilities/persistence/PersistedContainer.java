@@ -1,6 +1,9 @@
-package com.coreyd97.BurpExtenderUtilities;
+package com.coreyd97.BurpExtenderUtilities.persistence;
 
 import burp.api.montoya.MontoyaApi;
+import com.coreyd97.BurpExtenderUtilities.DefaultGsonProvider;
+import com.coreyd97.BurpExtenderUtilities.IGsonProvider;
+import com.coreyd97.BurpExtenderUtilities.Preferences;
 
 public abstract class PersistedContainer{
   public PersistedContainer(MontoyaApi api, String name){
